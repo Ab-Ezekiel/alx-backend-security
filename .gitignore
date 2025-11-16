@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.env
+.venv/
+env/
+venv/
+
+# Django stuff
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Migrations (optional — keep if you want to regenerate each time)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+# Uncomment the next line if you don’t want to track migration files
+# */migrations/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+
+# Byte-compiled / temporary files
+*.bak
+*.tmp
+*.orig
+
+# Coverage / test artifacts
+htmlcov/
+.coverage
+.pytest_cache/
+.tox/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker / build
+*.pid
+*.seed
+*.pid.lock
+node_modules/

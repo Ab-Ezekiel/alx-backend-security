@@ -1,6 +1,14 @@
 # ip_tracking/admin.py
 from django.contrib import admin
-from .models import BlockedIP
+from .models import BlockedIP, RequestLog
+
+
+@admin.register(RequestLog)
+class RequestLogAdmin(admin.ModelAdmin):
+    list_display = ('ip_address', 'path', 'timestamp', 'blocked')
+    ordering = ('-timestamp',)
+    list_filter = ('blocked',)
+
 
 @admin.register(BlockedIP)
 class BlockedIPAdmin(admin.ModelAdmin):
